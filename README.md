@@ -11,15 +11,15 @@ The original U-Net architecture was inspired by paper [U-Net: Convolutional Netw
 
 ![img/combination.png](img/combination.png)
 
-
+<p align="center">
+  <img height="300" src="img/combination.png"> <br>
 Figure_1: Example of MRI sagitall brain scan slice - brain tissue segmented with our system is highlighted in yellow.
-
+</p>
 
 ![img/unet_final.png](img/unet_final.png)
 
 
 Figure_2: Dense-U-net network model. Residual interconnections are in green color, dense interconnections in blue.
-
 
 ![img/dataset.png](img/dataset.png)
 
