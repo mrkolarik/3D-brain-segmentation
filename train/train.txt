@@ -1,0 +1,1 @@
+This folder should contain only subfolders with train images which should be in the same order as in ../masks. Original code is written in a way that train images are contained in 21 subfolders each containing 256 images. Data.py lists all images in subfolders and creates train images matrix.

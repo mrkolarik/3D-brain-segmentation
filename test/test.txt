@@ -1,0 +1,1 @@
+This folder should contain only subfolders with test images. Original code is written in a way that test images are contained in 1 subfolder containing 256 images. Data.py lists all images in all subfolders and creates test matrix.
