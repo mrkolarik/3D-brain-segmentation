@@ -9,28 +9,27 @@ The original U-Net architecture was inspired by paper [U-Net: Convolutional Netw
 
 ## Overview
 
-![img/combination.png](img/combination.png)
-
 <p align="center">
   <img height="300" src="img/combination.png"> <br>
-Figure_1: Example of MRI sagitall brain scan slice - brain tissue segmented with our system is highlighted in yellow.
+<b>Figure_1:</b> Example of MRI sagitall brain scan slice - brain tissue segmented with our system is highlighted in yellow.
 </p>
 
-![img/unet_final.png](img/unet_final.png)
+<p align="center">
+  <img height="450" src="img/unet_final.png"> <br>
+<b>Figure_2:</b> Dense-U-net network model. Residual interconnections are in green color, dense interconnections in blue.
+</p>
+
+<p align="center">
+  <img height="150" src="img/dataset.png"> <br>
+<b>Figure_3:</b> Example of training and prediction data batch overlapping. Numbers show which slices does each batch contain.
+</p>
+
+<p align="center">
+  <img height="280" src="img/twomask.png"> <br>
+<b>Figure_4:</b> Reference ground truth mask labeled by human expert (left), mask labeled by our system (right).
+</p>
 
 
-Figure_2: Dense-U-net network model. Residual interconnections are in green color, dense interconnections in blue.
-
-![img/dataset.png](img/dataset.png)
-
-
-Figure_3: Example of training and prediction data batch overlapping. Numbers show which slices does each batch contain.
-
-
-![img/twomask.png](img/twomask.png)
-
-
-Figure_4: Reference ground truth mask labeled by human expert (left), mask labeled by our system (right).
 
 ## About Keras
 
