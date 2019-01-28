@@ -27,7 +27,7 @@ The original U-Net architecture was inspired by paper [U-Net: Convolutional Netw
 
 <p align="center">
   <img height="500" src="img/dense_spine.png"> <br>
-<b>Figure_4:</b> Spine model segmented from CT set of images by 3D-Dense-U-Net.
+<b>Figure_4:</b> Spine model segmented from CT set of images by 3D-Dense-U-Net. The abnormal vertebrae adhesions exist also in original ground truth masks.
 </p>
 
 
