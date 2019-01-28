@@ -1,6 +1,7 @@
 # 3D Dense-U-net for MRI brain tissue segmentation
-!!!!! Code is still under development, contains a lot of comments. This will be fixed ASAP after 5. March !!!
-This is a repository containing code to Paper 3D Dense-Unet for MRI brain tissue segmentation (that hopefully will be) published on TSP 2018 conference.
+Hello everyone, this is a repository containing code to Paper "Optimized High Resolution 3D Dense-U-Net Network for Brain and Spine Segmentation" published at MDPI Applied sciences journal - https://www.mdpi.com/2076-3417/9/3/404.
+
+Most useful parts of this repository are python keras scripts with source code for 2D and 3D Dense-U-Net network models. Its an upgraded U-Net that we obtained better results than with classic U-Net and current hardware is capable of fitting it into GPU memory. Happy experimenting and let me know if any of your work is inspired by our work :) !
 
 The Code is inspired by great repository [Deep Learning Tutorial for Kaggle Ultrasound Nerve Segmentation competition, using Keras](https://github.com/jocicmarko/ultrasound-nerve-segmentation.)
 The Dense-Unet architecture was inspired by papers [The One Hundred Layers Tiramisu: Fully Convolutional DenseNets for Semantic Segmentation](https://arxiv.org/pdf/1611.09326.pdf) and [Densely Connected Convolutional Networks](https://arxiv.org/pdf/1608.06993.pdf).
@@ -11,7 +12,7 @@ The original U-Net architecture was inspired by paper [U-Net: Convolutional Netw
 
 <p align="center">
   <img height="300" src="img/combination.png"> <br>
-<b>Figure_1:</b> Example of MRI sagitall brain scan slice - brain tissue segmented with our system is highlighted in yellow.
+<b>Figure_1:</b> Example of MRI sagitall brain scan slice and transversal thoracic CT scan slice - tissue segmented with 3D-Dense-U-Net is highlighted in yellow.
 </p>
 
 <p align="center">
@@ -20,15 +21,14 @@ The original U-Net architecture was inspired by paper [U-Net: Convolutional Netw
 </p>
 
 <p align="center">
-  <img height="150" src="img/dataset.png"> <br>
-<b>Figure_3:</b> Example of training and prediction data batch overlapping. Numbers show which slices does each batch contain.
+  <img height="300" src="img/dense_brain.png"> <br>
+<b>Figure_3:</b> Brain model segmented from MRI set of images by 3D-Dense-U-Net.
 </p>
 
 <p align="center">
-  <img height="280" src="img/twomask.png"> <br>
-<b>Figure_4:</b> Reference ground truth mask labeled by human expert (left), mask labeled by our system (right).
+  <img height="400" src="img/dense_spine.png"> <br>
+<b>Figure_4:</b> Spine model segmented from CT set of images by 3D-Dense-U-Net.
 </p>
-
 
 
 ## About Keras
