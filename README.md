@@ -1,4 +1,4 @@
-# 3D Dense-U-net for MRI brain tissue segmentation
+# Optimized High Resolution 3D Dense-U-Net Network for Brain and Spine Segmentation
 Hello everyone, this is a repository containing code to Paper "Optimized High Resolution 3D Dense-U-Net Network for Brain and Spine Segmentation" published at MDPI Applied sciences journal - https://www.mdpi.com/2076-3417/9/3/404.
 
 Most useful parts of this repository are python keras scripts with source code for 2D and 3D Dense-U-Net network models. Its an upgraded U-Net that we obtained better results than with classic U-Net and current hardware is capable of fitting it into GPU memory. Happy experimenting and let me know if any of your work is inspired by our work :) !
