@@ -26,7 +26,7 @@ The original U-Net architecture was inspired by paper [U-Net: Convolutional Netw
 </p>
 
 <p align="center">
-  <img height="400" src="img/dense_spine.png"> <br>
+  <img height="500" src="img/dense_spine.png"> <br>
 <b>Figure_4:</b> Spine model segmented from CT set of images by 3D-Dense-U-Net.
 </p>
 
