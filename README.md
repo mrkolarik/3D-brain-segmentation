@@ -1,28 +1,7 @@
 # Optimized High Resolution 3D Dense-U-Net Network for Brain and Spine Segmentation
 Hello everyone, this is a repository containing code to Paper "Optimized High Resolution 3D Dense-U-Net Network for Brain and Spine Segmentation" published at MDPI Applied sciences journal - https://www.mdpi.com/2076-3417/9/3/404 .
 
-Most useful parts of this repository are python keras scripts with source code for 2D and 3D Dense-U-Net network models. Its an upgraded U-Net that we obtained better results than with classic U-Net and current hardware is capable of fitting it into GPU memory. Happy experimenting and let me know if any of your work is inspired by our work :) !
-
-Please cite our work as:
-
-Kolařík, M., Burget, R., Uher, V., Říha, K., & Dutta, M. K. (2019). Optimized High Resolution 3D Dense-U-Net Network for Brain and Spine Segmentation. Applied Sciences, 9(3), vol. 9, no. 3. 
-
-Article{kolavrik2019optimized,<br>
-&nbsp;   &nbsp;  title={Optimized High Resolution 3D Dense-U-Net Network for Brain and Spine Segmentation},<br>
-&nbsp;   &nbsp;  author={Kola{\v{r}}{\'\i}k, Martin and Burget, Radim and Uher, V{\'a}clav and {\v{R}}{\'\i}ha, Kamil and Dutta, Malay Kishore},<br>
-&nbsp;   &nbsp;  journal={Applied Sciences},
-&nbsp;   &nbsp;  volume={9},<br>
-&nbsp;   &nbsp;  number={3},<br>
-&nbsp;   &nbsp;  pages={404},<br>
-&nbsp;   &nbsp;  year={2019},<br>
-&nbsp;   &nbsp;  publisher={Multidisciplinary Digital Publishing Institute} <br>
-}
-
-
-The Code is inspired by great repository [Deep Learning Tutorial for Kaggle Ultrasound Nerve Segmentation competition, using Keras](https://github.com/jocicmarko/ultrasound-nerve-segmentation)
-The Dense-Unet architecture was inspired by papers [The One Hundred Layers Tiramisu: Fully Convolutional DenseNets for Semantic Segmentation](https://arxiv.org/pdf/1611.09326.pdf) and [Densely Connected Convolutional Networks](https://arxiv.org/pdf/1608.06993.pdf).
-The original U-Net architecture was inspired by paper [U-Net: Convolutional Networks for Biomedical Image Segmentation](http://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/).
-
+Most useful parts of this repository are python keras scripts with source code for 2D and 3D Dense-U-Net network models. Its an upgraded U-Net that we obtained better results than with classic U-Net and current hardware is capable of fitting it into GPU memory. 3D and 2D versions of Dense-U-Net, Res-U-Net and classic U-Net implementations are included. Happy experimenting and let me know if any of your work is inspired by our work :) !
 
 ## Overview
 
@@ -46,6 +25,27 @@ The original U-Net architecture was inspired by paper [U-Net: Convolutional Netw
 <b>Figure_4:</b> Spine model segmented from CT set of images by 3D-Dense-U-Net. The abnormal vertebrae adhesions exist also in original ground truth masks.
 </p>
 
+## Citation and references
+
+Please cite our work as:
+
+Kolařík, M., Burget, R., Uher, V., Říha, K., & Dutta, M. K. (2019). Optimized High Resolution 3D Dense-U-Net Network for Brain and Spine Segmentation. Applied Sciences, 9(3), vol. 9, no. 3. 
+
+Article{kolarik2019optimized,<br>
+&nbsp;   &nbsp;  title={Optimized High Resolution 3D Dense-U-Net Network for Brain and Spine Segmentation},<br>
+&nbsp;   &nbsp;  author={Kola{\v{r}}{\'\i}k, Martin and Burget, Radim and Uher, V{\'a}clav and {\v{R}}{\'\i}ha, Kamil and Dutta, Malay Kishore},<br>
+&nbsp;   &nbsp;  journal={Applied Sciences},
+&nbsp;   &nbsp;  volume={9},<br>
+&nbsp;   &nbsp;  number={3},<br>
+&nbsp;   &nbsp;  pages={404},<br>
+&nbsp;   &nbsp;  year={2019},<br>
+&nbsp;   &nbsp;  publisher={Multidisciplinary Digital Publishing Institute} <br>
+}
+
+
+The Code is inspired by great repository [Deep Learning Tutorial for Kaggle Ultrasound Nerve Segmentation competition, using Keras](https://github.com/jocicmarko/ultrasound-nerve-segmentation)
+The Dense-Unet architecture was inspired by papers [The One Hundred Layers Tiramisu: Fully Convolutional DenseNets for Semantic Segmentation](https://arxiv.org/pdf/1611.09326.pdf) and [Densely Connected Convolutional Networks](https://arxiv.org/pdf/1608.06993.pdf).
+The original U-Net architecture was inspired by paper [U-Net: Convolutional Networks for Biomedical Image Segmentation](http://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/).
 
 ## About Keras
 
