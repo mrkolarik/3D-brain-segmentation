@@ -7,8 +7,9 @@ Please cite our work as:
 
 Kolařík, M., Burget, R., Uher, V., Říha, K., & Dutta, M. K. (2019). Optimized High Resolution 3D Dense-U-Net Network for Brain and Spine Segmentation. Applied Sciences, 9(3), vol. 9, no. 3. 
 
-<p align="center">
+
 Article{kolavrik2019optimized,<br>
+<p padding-left:5em>
   title={Optimized High Resolution 3D Dense-U-Net Network for Brain and Spine Segmentation},<br>
   author={Kola{\v{r}}{\'\i}k, Martin and Burget, Radim and Uher, V{\'a}clav and {\v{R}}{\'\i}ha, Kamil and Dutta, Malay Kishore},<br>
   journal={Applied Sciences},
@@ -17,8 +18,9 @@ Article{kolavrik2019optimized,<br>
   pages={404},<br>
   year={2019},<br>
   publisher={Multidisciplinary Digital Publishing Institute} <br>
-} <br>
 </p>
+}
+
 
 The Code is inspired by great repository [Deep Learning Tutorial for Kaggle Ultrasound Nerve Segmentation competition, using Keras](https://github.com/jocicmarko/ultrasound-nerve-segmentation)
 The Dense-Unet architecture was inspired by papers [The One Hundred Layers Tiramisu: Fully Convolutional DenseNets for Semantic Segmentation](https://arxiv.org/pdf/1611.09326.pdf) and [Densely Connected Convolutional Networks](https://arxiv.org/pdf/1608.06993.pdf).
