@@ -4,19 +4,21 @@ Hello everyone, this is a repository containing code to Paper "Optimized High Re
 Most useful parts of this repository are python keras scripts with source code for 2D and 3D Dense-U-Net network models. Its an upgraded U-Net that we obtained better results than with classic U-Net and current hardware is capable of fitting it into GPU memory. Happy experimenting and let me know if any of your work is inspired by our work :) !
 
 Please cite our work as:
+
 Kolařík, M., Burget, R., Uher, V., Říha, K., & Dutta, M. K. (2019). Optimized High Resolution 3D Dense-U-Net Network for Brain and Spine Segmentation. Applied Sciences, 9(3), vol. 9, no. 3. 
 
-Article{kolavrik2019optimized,
-  title={Optimized High Resolution 3D Dense-U-Net Network for Brain and Spine Segmentation},
-  author={Kola{\v{r}}{\'\i}k, Martin and Burget, Radim and Uher, V{\'a}clav and {\v{R}}{\'\i}ha, Kamil and Dutta, Malay Kishore},
+<p align="center">
+Article{kolavrik2019optimized,<br>
+  title={Optimized High Resolution 3D Dense-U-Net Network for Brain and Spine Segmentation},<br>
+  author={Kola{\v{r}}{\'\i}k, Martin and Burget, Radim and Uher, V{\'a}clav and {\v{R}}{\'\i}ha, Kamil and Dutta, Malay Kishore},<br>
   journal={Applied Sciences},
-  volume={9},
-  number={3},
-  pages={404},
-  year={2019},
-  publisher={Multidisciplinary Digital Publishing Institute} 
-} 
-
+  volume={9},<br>
+  number={3},<br>
+  pages={404},<br>
+  year={2019},<br>
+  publisher={Multidisciplinary Digital Publishing Institute} <br>
+} <br>
+</p>
 
 The Code is inspired by great repository [Deep Learning Tutorial for Kaggle Ultrasound Nerve Segmentation competition, using Keras](https://github.com/jocicmarko/ultrasound-nerve-segmentation)
 The Dense-Unet architecture was inspired by papers [The One Hundred Layers Tiramisu: Fully Convolutional DenseNets for Semantic Segmentation](https://arxiv.org/pdf/1611.09326.pdf) and [Densely Connected Convolutional Networks](https://arxiv.org/pdf/1608.06993.pdf).
