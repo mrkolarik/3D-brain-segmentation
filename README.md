@@ -34,7 +34,7 @@ Kolařík, M., Burget, R., Uher, V., Říha, K., & Dutta, M. K. (2019). Optimize
 Article{kolarik2019optimized,<br>
 &nbsp;   &nbsp;  title={Optimized High Resolution 3D Dense-U-Net Network for Brain and Spine Segmentation},<br>
 &nbsp;   &nbsp;  author={Kola{\v{r}}{\'\i}k, Martin and Burget, Radim and Uher, V{\'a}clav and {\v{R}}{\'\i}ha, Kamil and Dutta, Malay Kishore},<br>
-&nbsp;   &nbsp;  journal={Applied Sciences},
+&nbsp;   &nbsp;  journal={Applied Sciences}, <br>
 &nbsp;   &nbsp;  volume={9},<br>
 &nbsp;   &nbsp;  number={3},<br>
 &nbsp;   &nbsp;  pages={404},<br>
