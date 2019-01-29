@@ -8,15 +8,15 @@ Please cite our work as:
 Kolařík, M., Burget, R., Uher, V., Říha, K., & Dutta, M. K. (2019). Optimized High Resolution 3D Dense-U-Net Network for Brain and Spine Segmentation. Applied Sciences, 9(3), vol. 9, no. 3. 
 
 
-Article{kolavrik2019optimized,<br> <p margin-left:5em>
-  title={Optimized High Resolution 3D Dense-U-Net Network for Brain and Spine Segmentation},<br>
-  author={Kola{\v{r}}{\'\i}k, Martin and Burget, Radim and Uher, V{\'a}clav and {\v{R}}{\'\i}ha, Kamil and Dutta, Malay Kishore},<br>
-  journal={Applied Sciences},
-  volume={9},<br>
-  number={3},<br>
-  pages={404},<br>
-  year={2019},<br>
-  publisher={Multidisciplinary Digital Publishing Institute} <br> </p>
+Article{kolavrik2019optimized,<br>
+    title={Optimized High Resolution 3D Dense-U-Net Network for Brain and Spine Segmentation},<br>
+    author={Kola{\v{r}}{\'\i}k, Martin and Burget, Radim and Uher, V{\'a}clav and {\v{R}}{\'\i}ha, Kamil and Dutta, Malay Kishore},<br>
+    journal={Applied Sciences},
+    volume={9},<br>
+    number={3},<br>
+    pages={404},<br>
+    year={2019},<br>
+    publisher={Multidisciplinary Digital Publishing Institute} <br>
 }
 
 
