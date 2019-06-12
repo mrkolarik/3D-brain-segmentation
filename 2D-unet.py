@@ -14,7 +14,7 @@ import tensorflow as tf
 tf.set_random_seed(256)
 
 from keras.models import Model
-from keras.layers import Input, concatenate, Conv2D, MaxPooling2DD, Conv2DTranspose, AveragePooling3D, ZeroPadding3D
+from keras.layers import Input, concatenate, Conv2D, MaxPooling2D, Conv2DTranspose, AveragePooling3D, ZeroPadding3D
 from keras.optimizers import RMSprop, Adam, SGD
 from keras.callbacks import ModelCheckpoint, CSVLogger
 from keras import backend as K
