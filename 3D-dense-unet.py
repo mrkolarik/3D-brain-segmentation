@@ -18,7 +18,7 @@ from keras import backend as K
 from keras.regularizers import l2
 from keras.utils import plot_model
 
-from data import load_train_data, load_test_data, preprocess_squeeze
+from data3D import load_train_data, load_test_data, preprocess_squeeze
 
 K.set_image_data_format('channels_last')
 

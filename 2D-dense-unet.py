@@ -21,7 +21,7 @@ from keras import backend as K
 from keras.regularizers import l2
 from keras.utils import plot_model
 
-from data import load_train_data, load_test_data, preprocess_squeeze
+from data2D import load_train_data, load_test_data, preprocess_squeeze
 
 K.set_image_data_format('channels_last')
 
@@ -46,58 +46,58 @@ def dice_coef_loss(y_true, y_pred):
 def get_unet():
     inputs = Input((img_rows, img_cols, 1))
     conv11 = Conv2D(32, (3, 3), activation='relu', padding='same')(inputs)
-    conc11 = concatenate([inputs, conv11], axis=4)
+    conc11 = concatenate([inputs, conv11], axis=3)
     conv12 = Conv2D(32, (3, 3), activation='relu', padding='same')(conc11)
-    conc12 = concatenate([inputs, conv12], axis=4)
+    conc12 = concatenate([inputs, conv12], axis=3)
     pool1 = MaxPooling2D(pool_size=(2, 2))(conc12)
 
     conv21 = Conv2D(64, (3, 3), activation='relu', padding='same')(pool1)
-    conc21 = concatenate([pool1, conv21], axis=4)
+    conc21 = concatenate([pool1, conv21], axis=3)
     conv22 = Conv2D(64, (3, 3), activation='relu', padding='same')(conc21)
-    conc22 = concatenate([pool1, conv22], axis=4)
+    conc22 = concatenate([pool1, conv22], axis=3)
     pool2 = MaxPooling2D(pool_size=(2, 2))(conc22)
 
     conv31 = Conv2D(128, (3, 3), activation='relu', padding='same')(pool2)
-    conc31 = concatenate([pool2, conv31], axis=4)
+    conc31 = concatenate([pool2, conv31], axis=3)
     conv32 = Conv2D(128, (3, 3), activation='relu', padding='same')(conc31)
-    conc32 = concatenate([pool2, conv32], axis=4)
+    conc32 = concatenate([pool2, conv32], axis=3)
     pool3 = MaxPooling2D(pool_size=(2, 2))(conc32)
 
     conv41 = Conv2D(256, (3, 3), activation='relu', padding='same')(pool3)
-    conc41 = concatenate([pool3, conv41], axis=4)
+    conc41 = concatenate([pool3, conv41], axis=3)
     conv42 = Conv2D(256, (3, 3), activation='relu', padding='same')(conc41)
-    conc42 = concatenate([pool3, conv42], axis=4)
+    conc42 = concatenate([pool3, conv42], axis=3)
     pool4 = MaxPooling2D(pool_size=(2, 2))(conc42)
 
     conv51 = Conv2D(512, (3, 3), activation='relu', padding='same')(pool4)
-    conc51 = concatenate([pool4, conv51], axis=4)
+    conc51 = concatenate([pool4, conv51], axis=3)
     conv52 = Conv2D(512, (3, 3), activation='relu', padding='same')(conc51)
-    conc52 = concatenate([pool4, conv52], axis=4)
+    conc52 = concatenate([pool4, conv52], axis=3)
 
-    up6 = concatenate([Conv2DTranspose(256, (2, 2), strides=(2, 2), padding='same')(conc52), conc42], axis=4)
+    up6 = concatenate([Conv2DTranspose(256, (2, 2), strides=(2, 2), padding='same')(conc52), conc42], axis=3)
     conv61 = Conv2D(256, (3, 3), activation='relu', padding='same')(up6)
-    conc61 = concatenate([up6, conv61], axis=4)
+    conc61 = concatenate([up6, conv61], axis=3)
     conv62 = Conv2D(256, (3, 3), activation='relu', padding='same')(conc61)
-    conc62 = concatenate([up6, conv62], axis=4)
+    conc62 = concatenate([up6, conv62], axis=3)
 
 
-    up7 = concatenate([Conv2DTranspose(128, (2, 2), strides=(2, 2), padding='same')(conc62), conv32], axis=4)
+    up7 = concatenate([Conv2DTranspose(128, (2, 2), strides=(2, 2), padding='same')(conc62), conv32], axis=3)
     conv71 = Conv2D(128, (3, 3), activation='relu', padding='same')(up7)
-    conc71 = concatenate([up7, conv71], axis=4)
+    conc71 = concatenate([up7, conv71], axis=3)
     conv72 = Conv2D(128, (3, 3), activation='relu', padding='same')(conc71)
-    conc72 = concatenate([up7, conv72], axis=4)
+    conc72 = concatenate([up7, conv72], axis=3)
 
-    up8 = concatenate([Conv2DTranspose(64, (2, 2), strides=(2, 2), padding='same')(conc72), conv22], axis=4)
+    up8 = concatenate([Conv2DTranspose(64, (2, 2), strides=(2, 2), padding='same')(conc72), conv22], axis=3)
     conv81 = Conv2D(64, (3, 3), activation='relu', padding='same')(up8)
-    conc81 = concatenate([up8, conv81], axis=4)
+    conc81 = concatenate([up8, conv81], axis=3)
     conv82 = Conv2D(64, (3, 3), activation='relu', padding='same')(conc81)
-    conc82 = concatenate([up8, conv82], axis=4)
+    conc82 = concatenate([up8, conv82], axis=3)
 
-    up9 = concatenate([Conv2DTranspose(32, (2, 2), strides=(2, 2), padding='same')(conc82), conv12], axis=4)
+    up9 = concatenate([Conv2DTranspose(32, (2, 2), strides=(2, 2), padding='same')(conc82), conv12], axis=3)
     conv91 = Conv2D(32, (3, 3), activation='relu', padding='same')(up9)
-    conc91 = concatenate([up9, conv91], axis=4)
+    conc91 = concatenate([up9, conv91], axis=3)
     conv92 = Conv2D(32, (3, 3), activation='relu', padding='same')(conc91)
-    conc92 = concatenate([up9, conv92], axis=4)
+    conc92 = concatenate([up9, conv92], axis=3)
 
     conv10 = Conv2D(1, (1, 1), activation='sigmoid')(conc92)
 
