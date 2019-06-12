@@ -6,10 +6,6 @@
       <change beforePath="$PROJECT_DIR$/2D-dense-unet.py" beforeDir="false" afterPath="$PROJECT_DIR$/2D-dense-unet.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/2D-res-unet.py" beforeDir="false" afterPath="$PROJECT_DIR$/2D-res-unet.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/2D-unet.py" beforeDir="false" afterPath="$PROJECT_DIR$/2D-unet.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3D-dense-unet.py" beforeDir="false" afterPath="$PROJECT_DIR$/3D-dense-unet.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3D-res-unet.py" beforeDir="false" afterPath="$PROJECT_DIR$/3D-res-unet.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3D-unet.py" beforeDir="false" afterPath="$PROJECT_DIR$/3D-unet.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data2D.py" beforeDir="false" afterPath="$PROJECT_DIR$/data2D.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,8 +18,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/2D-dense-unet.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="656">
-              <caret line="99" column="46" selection-start-line="99" selection-start-column="46" selection-end-line="99" selection-end-column="46" />
+            <state relative-caret-position="724">
+              <caret line="221" column="95" selection-start-line="221" selection-start-column="95" selection-end-line="221" selection-end-column="95" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
               </folding>
@@ -46,8 +42,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/2D-res-unet.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="705">
-              <caret line="89" column="44" selection-start-line="89" selection-start-column="44" selection-end-line="89" selection-end-column="44" />
+            <state relative-caret-position="754">
+              <caret line="203" column="95" selection-start-line="203" selection-start-column="95" selection-end-line="203" selection-end-column="95" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
               </folding>
@@ -58,8 +54,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/2D-unet.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="765">
-              <caret line="78" column="105" selection-start-line="78" selection-start-column="105" selection-end-line="78" selection-end-column="105" />
+            <state relative-caret-position="754">
+              <caret line="193" column="95" selection-start-line="193" selection-start-column="95" selection-end-line="193" selection-end-column="95" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
               </folding>
@@ -97,9 +93,9 @@
         <option value="$PROJECT_DIR$/3D-res-unet.py" />
         <option value="$PROJECT_DIR$/3D-unet.py" />
         <option value="$PROJECT_DIR$/data2D.py" />
-        <option value="$PROJECT_DIR$/2D-dense-unet.py" />
-        <option value="$PROJECT_DIR$/2D-res-unet.py" />
         <option value="$PROJECT_DIR$/2D-unet.py" />
+        <option value="$PROJECT_DIR$/2D-res-unet.py" />
+        <option value="$PROJECT_DIR$/2D-dense-unet.py" />
       </list>
     </option>
   </component>
@@ -114,6 +110,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -130,7 +127,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -164,18 +160,19 @@
       <option name="presentableId" value="Default" />
       <updated>1548706039676</updated>
       <workItem from="1548706040992" duration="2177000" />
-      <workItem from="1560353933760" duration="487000" />
+      <workItem from="1560353933760" duration="1066000" />
+      <workItem from="1560355982262" duration="400000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3451000" />
+    <option name="totallyTimeSpent" value="4430000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1175" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.257886" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26065302" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -186,7 +183,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="8" visible="true" weight="0.028680688" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Python Console" order="11" />
@@ -237,8 +234,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/3D-dense-unet.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="20" column="11" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="11" />
+        <state relative-caret-position="270">
+          <caret line="24" column="30" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2D-unet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="754">
+          <caret line="193" column="95" selection-start-line="193" selection-start-column="95" selection-end-line="193" selection-end-column="95" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2D-res-unet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="754">
+          <caret line="203" column="95" selection-start-line="203" selection-start-column="95" selection-end-line="203" selection-end-column="95" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
           </folding>
@@ -255,30 +272,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/2D-res-unet.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="705">
-          <caret line="89" column="44" selection-start-line="89" selection-start-column="44" selection-end-line="89" selection-end-column="44" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2D-unet.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="78" column="105" selection-start-line="78" selection-start-column="105" selection-end-line="78" selection-end-column="105" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/2D-dense-unet.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="656">
-          <caret line="99" column="46" selection-start-line="99" selection-start-column="46" selection-end-line="99" selection-end-column="46" />
+        <state relative-caret-position="724">
+          <caret line="221" column="95" selection-start-line="221" selection-start-column="95" selection-end-line="221" selection-end-column="95" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
           </folding>

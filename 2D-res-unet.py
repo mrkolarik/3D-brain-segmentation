@@ -184,22 +184,24 @@ def predict():
     print('Saving predicted masks to files...')
     print('-' * 30)
 
-    #imgs_mask_test = preprocess_squeeze(imgs_mask_test)
+    imgs_mask_test = preprocess_squeeze(imgs_mask_test)
     # imgs_mask_test /= 1.7
     imgs_mask_test = np.around(imgs_mask_test, decimals=0)
-    imgs_mask_test = (imgs_mask_test*255.).astype(np.uint8)
+    imgs_mask_test = (imgs_mask_test * 255.).astype(np.uint8)
     count_visualize = 1
     count_processed = 0
     count_processed = 0
+    pred_dir = 'preds/'
+    if not os.path.exists(pred_dir):
+        os.mkdir(pred_dir)
     pred_dir = os.path.join('preds/', project_name)
     if not os.path.exists(pred_dir):
         os.mkdir(pred_dir)
     for x in range(0, imgs_mask_test.shape[0]):
-        for y in range(0, imgs_mask_test.shape[1]):
-            imsave(os.path.join(pred_dir, 'pred_' + str(f"{count_processed:03}") + '.png'), imgs_mask_test[x][y])
-            count_processed += 1
-            if (count_processed % 100) == 0:
-                print('Done: {0}/{1} test images'.format(count_processed, imgs_mask_test.shape[0]*imgs_mask_test.shape[1]))
+        imsave(os.path.join(pred_dir, 'pred_' + str(f"{count_processed:03}") + '.png'), imgs_mask_test[x])
+        count_processed += 1
+        if (count_processed % 100) == 0:
+            print('Done: {0}/{1} test images'.format(count_processed, imgs_mask_test.shape[0]))
 
     print('-'*30)
     print('Prediction finished')
