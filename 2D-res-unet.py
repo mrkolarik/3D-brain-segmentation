@@ -184,9 +184,9 @@ def predict():
     print('Saving predicted masks to files...')
     print('-' * 30)
 
-    imgs_mask_test = preprocess_squeeze(imgs_mask_test)
+    #imgs_mask_test = preprocess_squeeze(imgs_mask_test)
     # imgs_mask_test /= 1.7
-    #imgs_mask_test = np.around(imgs_mask_test, decimals=0)
+    imgs_mask_test = np.around(imgs_mask_test, decimals=0)
     imgs_mask_test = (imgs_mask_test*255.).astype(np.uint8)
     count_visualize = 1
     count_processed = 0
