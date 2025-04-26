@@ -1,64 +1,89 @@
-# Optimized High Resolution 3D Dense-U-Net Network for Brain and Spine Segmentation
-Hello everyone, this is a repository containing code to Paper "Optimized High Resolution 3D Dense-U-Net Network for Brain and Spine Segmentation" published at MDPI Applied sciences journal - https://www.mdpi.com/2076-3417/9/3/404 .
-
-The code is intentionally written in simple script like not OOP style to keep as simple as possible.
-
-Most useful parts of this repository are python keras scripts with source code for 2D and 3D Dense-U-Net network models. Its an upgraded U-Net that we obtained better results than with classic U-Net and current hardware is capable of fitting it into GPU memory. 3D and 2D versions of Dense-U-Net, Res-U-Net and classic U-Net implementations are included. Happy experimenting and let me know if any of your work is inspired by our work :) !
-
-## Overview
+# Optimized High Resolution 3D Dense-U-Net for Brain and Spine Segmentation
 
 <p align="center">
-  <img height="300" src="img/combination.png"> <br>
-<b>Figure_1:</b> Example of MRI sagitall brain scan slice and transversal thoracic CT scan slice - tissue segmented with 3D-Dense-U-Net is highlighted in yellow.
+  <a href="https://www.mdpi.com/2076-3417/9/3/404"><img src="https://img.shields.io/badge/Paper-Applied%20Sciences%20(2019)-blue"></a>
+  <img src="https://img.shields.io/badge/Status-To%20Be%20Archived-lightgrey">
+  <img src="https://img.shields.io/badge/Framework-Keras-orange">
 </p>
 
-<p align="center">
-  <img height="450" src="img/unet_final.png"> <br>
-<b>Figure_2:</b> Dense-U-net network model. Residual interconnections are in green color, dense interconnections in blue.
-</p>
+---
 
-<p align="center">
-  <img height="300" src="img/dense_brain.png"> <br>
-<b>Figure_3:</b> Brain model segmented from MRI set of images by 3D-Dense-U-Net.
-</p>
+This repository provides the official codebase for the paper:  
+**[Optimized High Resolution 3D Dense-U-Net Network for Brain and Spine Segmentation](https://www.mdpi.com/2076-3417/9/3/404)**  
+published in *MDPI Applied Sciences, 2019*.
 
-<p align="center">
-  <img height="500" src="img/dense_spine.png"> <br>
-<b>Figure_4:</b> Spine model segmented from CT set of images by 3D-Dense-U-Net. The abnormal vertebrae adhesions exist also in original ground truth masks.
-</p>
+If you are working on medical 3D segmentation and seek to benchmark against our methods, this repository offers the corresponding academic implementation.
 
-## Citation and references
+---
 
-Please cite our work as:
+## 📄 Paper Overview
 
-Kolařík, M., Burget, R., Uher, V., Říha, K., & Dutta, M. K. (2019). Optimized High Resolution 3D Dense-U-Net Network for Brain and Spine Segmentation. Applied Sciences, 9(3), vol. 9, no. 3. 
+- Optimized Dense-U-Net architecture for brain MRI and spine CT segmentation
+- Improvements over standard U-Net in segmentation accuracy
+- Designed for practical training on available GPUs in 2019
+- Implementations include:
+  - 2D and 3D Dense-U-Net
+  - 2D and 3D Res-U-Net
+  - Classic U-Net for baseline comparison
 
-Article{kolarik2019optimized,<br>
-&nbsp;   &nbsp;  title={Optimized High Resolution 3D Dense-U-Net Network for Brain and Spine Segmentation},<br>
-&nbsp;   &nbsp;  author={Kola{\v{r}}{\'\i}k, Martin and Burget, Radim and Uher, V{\'a}clav and {\v{R}}{\'\i}ha, Kamil and Dutta, Malay Kishore},<br>
-&nbsp;   &nbsp;  journal={Applied Sciences}, <br>
-&nbsp;   &nbsp;  volume={9},<br>
-&nbsp;   &nbsp;  number={3},<br>
-&nbsp;   &nbsp;  pages={404},<br>
-&nbsp;   &nbsp;  year={2019},<br>
-&nbsp;   &nbsp;  publisher={Multidisciplinary Digital Publishing Institute} <br>
+---
+
+## 📂 Datasets used
+
+- **Spine Dataset:** Previously available through [SpineWeb](https://spineweb.digitalimaginggroup.ca/). Offline as of April 2025
+- **Brain MRI Dataset:** Private; redistribution is unfortunately not permitted.
+
+---
+
+## 🧪 Results
+
+Segmentation examples using 3D Dense-U-Net:
+
+| Brain MRI Slice | Dense-U-Net Architecture | Brain Segmentation Output | Spine Segmentation Output |
+|:---:|:---:|:---:|:---:|
+| ![](img/combination.png) | ![](img/unet_final.png) | ![](img/dense_brain.png) | ![](img/dense_spine.png) |
+
+- **Figure 1:** Example of MRI brain slice and thoracic CT scan. Segmented tissue is highlighted.
+- **Figure 2:** Dense-U-Net architecture (green: residual connections, blue: dense connections).
+- **Figure 3:** 3D brain segmentation output.
+- **Figure 4:** 3D spine segmentation output (vertebrae abnormalities included in ground truth).
+
+---
+
+## 📚 Citation
+
+If you reference or build on this work, please cite:
+
+```
+@article{kolarik2019optimized,
+  title={Optimized High Resolution 3D Dense-U-Net Network for Brain and Spine Segmentation},
+  author={Kola{\v{r}}{\'\i}k, Martin and Burget, Radim and Uher, V{\'a}clav and {\v{R}}{\'\i}ha, Kamil and Dutta, Malay Kishore},
+  journal={Applied Sciences},
+  volume={9},
+  number={3},
+  pages={404},
+  year={2019},
+  publisher={Multidisciplinary Digital Publishing Institute}
 }
+```
 
+---
 
-The Code is inspired by great repository [Deep Learning Tutorial for Kaggle Ultrasound Nerve Segmentation competition, using Keras](https://github.com/jocicmarko/ultrasound-nerve-segmentation)
-The Dense-Unet architecture was inspired by papers [The One Hundred Layers Tiramisu: Fully Convolutional DenseNets for Semantic Segmentation](https://arxiv.org/pdf/1611.09326.pdf) and [Densely Connected Convolutional Networks](https://arxiv.org/pdf/1608.06993.pdf).
-The original U-Net architecture was inspired by paper [U-Net: Convolutional Networks for Biomedical Image Segmentation](http://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/).
+## 📖 Related Work
 
-## About Keras
+This implementation is inspired by:
 
-Keras is a minimalist, highly modular neural networks library, written in Python and capable of running on top of either TensorFlow or Theano. It was developed with a focus on enabling fast experimentation. Being able to go from idea to result with the least possible delay is key to doing good research.
+- [Deep Learning Tutorial for Kaggle Ultrasound Nerve Segmentation](https://github.com/jocicmarko/ultrasound-nerve-segmentation)
+- [The One Hundred Layers Tiramisu (Fully Convolutional DenseNets)](https://arxiv.org/pdf/1611.09326.pdf)
+- [Densely Connected Convolutional Networks (DenseNet)](https://arxiv.org/pdf/1608.06993.pdf)
+- [U-Net: Convolutional Networks for Biomedical Image Segmentation](http://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/)
 
-Use Keras if you need a deep learning library that:
+---
 
-allows for easy and fast prototyping (through total modularity, minimalism, and extensibility).
-supports both convolutional networks and recurrent networks, as well as combinations of the two.
-supports arbitrary connectivity schemes (including multi-input and multi-output training).
-runs seamlessly on CPU and GPU.
-Read the documentation [Keras.io](http://keras.io/)
+## 🚀 Project Status
 
-Keras is compatible with: Python 2.7-3.5.
+This repository is no longer actively maintained and will be archived.  
+The code serves as an academic reference for reproducing results from the original publication.  
+For current state-of-the-art (SOTA) research, please consult newer architectures and frameworks.
+
+---
